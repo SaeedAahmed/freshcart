@@ -1,0 +1,12 @@
+
+@media screen and (max-width:797px) {
+  .res-image{
+    max-width: 100%;
+  }
+  
+}
+@media screen and (max-width:597px) {
+  .res-image{
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,150 @@
+nav {
+  border-bottom: 1px solid var(--main-color);
+  padding: 15px 20px;
+  background-color: rgb(255, 255, 255);
+}
+.origin .one {
+  width: 15%;
+  color: var(--main-color) !important;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.origin .one .fs{
+  display: block;
+}
+.origin .two {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.origin .three {
+  width: 35%;
+}
+.origin .four {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.switch {
+  display:none !important;
+  width: 0;
+}
+.four span {
+  font-size: 1rem;
+  color: var(--fourty-color);
+  font-weight: 800;
+}
+.dropmenu {
+  border: 1px solid #e9e8ea;
+  width: 20%;
+  background: #fff;
+  padding: 16px;
+  position: absolute;
+  display: none;
+  z-index: 7;
+  top: 65px;
+  right: 140px;
+  transition: all 0.5s ease;
+}
+.user:hover .dropmenu {
+  display: block;
+}
+
+
+
+.dropDownmenu {
+  border: 1px solid #e9e8ea;
+
+  background: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  display: none;
+  z-index: 7;
+  top:35px;
+  right: -40px;
+  transition: all 0.5s ease;
+}
+.user:hover .dropDownmenu{
+  display: block;
+}
+.badge {
+  width:18px;
+  height:18px;
+  border-radius: 50%;
+  top: 0;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px !important;
+  font-weight: 700;
+  color: #fff !important;
+  background-color: #22242a;
+}
+
+/*****                                                media query                                           *****/
+
+/***         997           ***/
+@media screen and (max-width: 997px) {
+  .dropmenu {
+    width: 25%;
+    right: 25px;
+  }
+  .origin .one {
+    width: 15%;
+  }
+  .origin .two {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .origin .four {
+    width: 25%;
+  }
+}
+
+/***         878          ***/
+@media screen and (max-width: 878px) {
+  .dropmenu {
+    width: 25%;
+    right: 70px;
+  }
+.origin{
+  display: none !important;
+  width: 0;
+
+}
+.switch {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--bg-main);
+  cursor: pointer;
+}
+.switch .logo{
+  padding-left: -5px;
+}
+.badge {
+  width:18px;
+  height:18px;
+  border-radius: 50%;
+  top: -10px;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px !important;
+  font-weight: 700;
+  color: #fff !important;
+  background-color: #22242a;
+}
+}
+
+
+

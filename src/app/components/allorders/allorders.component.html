@@ -1,0 +1,36 @@
+<section class="my-5">
+
+  <div class="container">
+    <div class="msg">
+      <div class="my-3">
+        <h2 class="mb-3">Thank you <span>{{ orderData[0]?.user?.name }}</span></h2>
+        <h5 class="font-15">Your order has shipped</h5>
+      </div>
+
+      <div class="product">
+        <div class="row">
+          <div class="col-12">
+            <div class="title d-flex align-items-center justify-content-between">
+              <h3 class="font-15">Product</h3>
+              <h3 class="font-15">Price</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row" *ngFor="let product of userProducts">
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between mt-3">
+              <p class="font-15">{{ product.product.title | cutText:2 }}</p>
+              <p class="font-15">{{ product.price }} <span class="font">EGP</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="total d-flex align-items-center justify-content-between">
+          <h3 class="font-15">Total Price for {{ userProducts.length }} Products</h3>
+          <h3 class="font-15">{{ totalProductsPrice | number:'1.0-0' }}</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>

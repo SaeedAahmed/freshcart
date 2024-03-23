@@ -1,0 +1,32 @@
+.product-cart-img{
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+}
+.product-cart-img .add{
+ position: absolute;
+ bottom: 0px;
+ right: 0;
+ left: 0;
+ opacity: 0;
+ transition: opacity 0.5s ;
+  }
+  .product-cart-img:hover .add{
+    opacity: 1;
+  }
+  .add-to-cart {
+    padding: 0 10px;
+    font-size: 0.7rem;
+    color: #22242a;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #22242a;
+  }
+  .reviwe {
+    padding: 0 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 0;
+    background-color: #22242a;
+    border: 1px solid #22242a;
+  }
+
+
